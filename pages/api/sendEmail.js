@@ -12,10 +12,10 @@ export default (req, res) => {
     });
     const data = {
       to: email,
-      from: "regitration@blablaconf.com",
+      from: "registration@blablaconf.com",
       subject: "BlaBlaConf Registration",
       text: "Welcome to BlaBlaConf",
-      html: `<strong>محبا بكم فبلابلا كونف هاد الإيمايل كايعني بلي راك تسجلتي معانا ف الكونفيرونص و لي غادي تكون ما بين 20 و 24 أكتوبر على الساعة السادسة بتوقيت المغرب، للمزيد من المعلومات تابعونا على صفحتنا الرسمية في الفايسبوك.
+      html: `<strong>مرحبا بكم فبلابلا كونف هاد الإيمايل كايعني بلي راك تسجلتي معانا ف الكونفيرونص و لي غادي تكون ما بين 20 و 24 أكتوبر على الساعة السادسة بتوقيت المغرب، للمزيد من المعلومات تابعونا على صفحتنا الرسمية في الفايسبوك.
       <br/>
       <a href="https://www.facebook.com/geeksblabla">geeksblabla</a>
      
@@ -23,7 +23,7 @@ export default (req, res) => {
     };
     mg.messages().send(data, function (error, body) {
       console.log(body);
-    }); 
+    });
     res.json({ result: "ok" });
   }
 };

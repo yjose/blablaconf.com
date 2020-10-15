@@ -54,7 +54,7 @@ export const Ticket = () => {
             )}
           </div>
           <div className={styles.img_container}>
-            <img src={getTicketImg(user)} className={styles.img} />
+            <img src={getTicketImg(user)} alt="ticket" className={styles.img} />
           </div>
         </div>
       </Container>
@@ -83,7 +83,7 @@ const SelectGenderModal = ({ isBoy, setIsBoy, setUser }) => {
         .collection("/tickets")
         .doc(additionalUserInfo.username)
         .set(tmpUser);
-      setUser(tmpUser);
+        setUser(tmpUser);
     });
   };
 

@@ -9,11 +9,13 @@ export const Registration = () => {
         <div className={styles.main}>
           <div className={styles.form}>
             <h1 className={styles.title}>
-              What are you waiting for? Claim your spot now!
+              What are you waiting for? Claim your ticket now!
             </h1>
             <RegistrationForm secondary />
           </div>
-          <img src="/tickets.png" className={styles.tickets} />
+          <div className={styles.tickets_container}>
+            <img src="/tickets.png" alt={"image og tickets"} className={styles.tickets} />
+          </div>
         </div>
       </div>
     </div>

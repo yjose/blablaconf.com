@@ -8,7 +8,7 @@ import {
   Registration,
   Sponsors,
 } from "../components";
-import { getData } from "./api/index";
+import { getData } from "../components/utils";
 
 const Index = ({ tracks, speakers }) => {
   return (
@@ -21,7 +21,6 @@ const Index = ({ tracks, speakers }) => {
       </Head>
       <Hero />
       <About />
-
       <Speakers speakers={speakers} />
       <Agenda tracks={tracks} />
       <Registration />
